@@ -31,6 +31,10 @@ public class GamePanel extends JPanel {
     private int points;
     private JLabel levelLabel;
     private JLabel pointsLabel;
+    private JPanel mainPanel;
+    private JPanel infoPanel;
+    private JPanel nextPanel;
+    private JPanel scorPanel;
 
 
     public GamePanel() {
@@ -40,7 +44,6 @@ public class GamePanel extends JPanel {
         setLayout(new BorderLayout());
         add(levelLabel,BorderLayout.NORTH);
         add(pointsLabel,BorderLayout.SOUTH);
-        
 
         points = 0;
         level = 1;
